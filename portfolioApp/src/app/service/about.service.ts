@@ -7,7 +7,7 @@ import { About } from '../model/about';
   providedIn: 'root'
 })
 export class AboutService {
-  aboutURL = 'http://localhost:8080/about/';
+  aboutURL = 'https://shielded-brushlands-02690.herokuapp.com/about/';
 
 
   constructor(private httpClient: HttpClient) { }
