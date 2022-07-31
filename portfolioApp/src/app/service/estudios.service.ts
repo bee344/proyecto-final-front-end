@@ -7,7 +7,7 @@ import { Estudios } from '../model/estudios';
   providedIn: 'root'
 })
 export class EstudiosService {
-  expURL = 'http://localhost:8080/estudios/'
+  expURL = 'https://shielded-brushlands-02690.herokuapp.com/estudios/'
 
   constructor(private httpClient: HttpClient) { }
 
