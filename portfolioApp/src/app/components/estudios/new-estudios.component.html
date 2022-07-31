@@ -1,0 +1,33 @@
+<div class="row">
+    <app-header></app-header>
+    <div class="container">
+        <div class="row">
+            <div>
+                <form (ngSubmit)="onCreate()" nonvalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombreS">Nombre del estudio</label>
+                        <input type="text" class="form-control" id="nombreS" name="nombreS" [(ngModel)]="nombreS"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="almaMaterS">Nombre de la institucion</label>
+                        <input type="text" class="form-control" id="almaMaterS" name="almaMaterS"
+                            [(ngModel)]="almaMaterS" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fechaS">Fecha de graduacion</label>
+                        <input type="text" class="form-control" id="fechaS" name="fechaS" [(ngModel)]="fechaS" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcionS">Descripcion del estudio</label>
+                        <input type="text" class="form-control" id="descripcionS" name="descripcionS"
+                            [(ngModel)]="descripcionS" required>
+                    </div>
+                    <button class="btn btn-primary">
+                        Agregar Estudios
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

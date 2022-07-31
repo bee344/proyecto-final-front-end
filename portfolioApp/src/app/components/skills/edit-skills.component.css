@@ -1,0 +1,12 @@
+.row {
+    background-color: #6E85B7;
+    min-height: 100vh;
+    font-family: 'Sora', sans-serif;
+
+}
+
+.btn {
+    font-weight: 200;
+    font-family: 'Sora', sans-serif;
+    border-width: medium;
+}

@@ -1,0 +1,13 @@
+#repeat {
+    background-repeat: repeat-x;
+}
+
+div {
+    background-color: white;
+    margin: 0%;
+    height: 400px;
+    background: url(../../../assets/banner.png);
+    overflow: hidden;
+    align-items: center;
+    vertical-align: middle;
+}

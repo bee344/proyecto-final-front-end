@@ -1,0 +1,40 @@
+#logoArgProg{
+    width: 150px;
+}
+
+img{
+    width: 50px;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes{
+    margin-right: 0.5em;
+}
+
+.redes img{
+    margin: 0.2em;
+}
+
+@media (max-width: 575px) {
+    .container{
+        flex-direction: column;
+    }
+    
+    .redes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+.btn {
+    font-weight: 200;
+    font-family: 'Sora', sans-serif;
+    border-width: medium;
+}

@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="coll-xs-12 col-sm-2 col-md-2 col-lg-2 h-25 align-items-top">
+        <img src='{{"../../../../../assets/" + persona.nombre + persona.apellido + ".jpg"}}'
+            class="img-thumbnail float-left" alt="Responsive Image" id="profilepic">
+    </div>
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 align-self-center">
+        <p id="name">{{persona.nombre}} {{persona.apellido}}</p>
+        <li *ngFor="let About of about">
+            <p id="job">{{about[0].profesion}}</p>
+          </li>
+
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-8 col-8 align-self-center" id="description">
+        <span>
+            <h1>Sobre mí</h1>
+            <li *ngFor="let About of about">
+                <p>{{About.descripcion}}</p>
+              </li>
+            <p *ngIf="isLogged"><button class="btn btn-light" routerLink="/editabout/1"><i
+                        class="bi bi-pencil-fill"></i>Editar</button></p>
+        </span>
+    </div>
+</div>

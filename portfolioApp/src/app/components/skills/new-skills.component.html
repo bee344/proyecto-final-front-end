@@ -1,0 +1,24 @@
+<div class="row">
+    <app-header></app-header>
+    <div class="container">
+        <div class="row">
+            <div>
+                <form (ngSubmit)="onCreate()" nonvalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombreSk">Nombre de la habilidad</label>
+                        <input type="text" class="form-control" id="nombreSk" name="nombreSk" [(ngModel)]="nombreSk"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="progresoSk">Nivel de manejo (1 a 100)</label>
+                        <input type="text" class="form-control" id="progresoSk" name="progresoSk"
+                            [(ngModel)]="progresoSk" required>
+                    </div>
+                    <button class="btn btn-primary">
+                        Agregar habilidad
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

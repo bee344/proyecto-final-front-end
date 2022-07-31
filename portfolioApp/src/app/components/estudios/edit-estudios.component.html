@@ -1,0 +1,34 @@
+<div class="row">
+    <app-header></app-header>
+    <div class="container" *ngIf="estu">
+        <div class="row">
+            <div>
+                <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="nombreS">Titulo</label>
+                        <input type="text" class="form-control" id="nombreS" name="nombreS" [(ngModel)]="estu.nombreS"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="almaMaterS">Institucion</label>
+                        <input type="text" class="form-control" id="almaMaterS" name="almaMaterS"
+                            [(ngModel)]="estu.almaMaterS" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fechaS">Fecha de graduacion</label>
+                        <input type="text" class="form-control" id="fechaS" name="fechaS" [(ngModel)]="estu.fechaS"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcionS">Descripcion del estudio</label>
+                        <input type="text" class="form-control" id="descripcionS" name="descripcionS"
+                            [(ngModel)]="estu.descripcionS" required>
+                    </div>
+                    <button class="btn btn-primary">
+                        Actualizar Estudios
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

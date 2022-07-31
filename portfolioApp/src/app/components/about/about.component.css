@@ -1,0 +1,74 @@
+.row{
+    padding: 20px;
+}
+
+h1 {
+    font-weight: 600;
+    font-family: 'Sora', sans-serif;
+}
+
+.btn {
+    font-weight: 200;
+    font-family: 'Sora', sans-serif;
+}
+
+div{
+    background-color: #6E85B7;
+    text-align: center;
+    font-family: 'Sora', sans-serif;
+}
+
+#name{
+    font-weight: bold;
+    margin-top: 30%;
+    text-align: left;
+    font-family: 'Sora', sans-serif;
+}
+
+@media (min-width: 576px) {
+    #profilepic{
+        position: absolute;
+        width: 10%;
+        height: auto;
+        border-radius: 100%;
+        left: 3%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    #profilepic{
+        position: absolute;
+        width: 25%;
+        height: auto;
+        border-radius: 100%;
+        left: 38%;
+        margin: auto
+    }
+}
+
+@media (max-width: 575px) {
+    #description{
+        text-align: left;
+        margin-left: 15%;
+        font-family: 'Sora', sans-serif;
+    }
+}
+
+@media (min-width: 585px) {
+    #description{
+        text-align: left;
+        font-family: 'Sora', sans-serif;
+    }
+}
+
+#job{
+    text-align: left;
+    padding-right: 10%;
+    font-family: 'Sora', sans-serif;
+}
+
+p {
+    font-size: 1.5em;
+    font-family: 'Sora', sans-serif;
+}

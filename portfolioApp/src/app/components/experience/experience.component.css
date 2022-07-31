@@ -1,0 +1,20 @@
+.row{
+    padding: 20px;
+    background-color: #6E85B7;
+}
+
+h1 {
+    font-weight: 600;
+    font-family: 'Sora', sans-serif;
+}
+
+td {
+    font-family: 'Sora', sans-serif;
+    font-size: large;
+    font-weight: 200;
+}
+
+.btn {
+    font-weight: 200;
+    font-family: 'Sora', sans-serif;
+}

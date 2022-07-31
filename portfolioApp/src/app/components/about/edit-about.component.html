@@ -1,0 +1,24 @@
+<div class="row">
+    <app-header></app-header>
+    <div class="container" *ngIf="about">
+        <div class="row">
+            <div>
+                <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                    <div class="form-group">
+                        <label for="profesion">Modificar profesion</label>
+                        <input type="text" class="form-control" id="profesion" name="profesion"
+                            [(ngModel)]="about.profesion" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="descripcion">Modificar descripcion</label>
+                        <input type="text" class="form-control" id="descripcion" name="descripcion"
+                            [(ngModel)]="about.descripcion" required>
+                    </div>
+                    <button class="btn btn-primary">
+                        Actualizar Descripcion
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
