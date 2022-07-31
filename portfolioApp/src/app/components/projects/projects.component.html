@@ -10,9 +10,15 @@
         <table class="table">
             <tbody>
                 <tr *ngFor="let Proyecto of proy">
-                    <td><h2>{{Proyecto.nombreP}}</h2></td>
-                    <td id="proyecto"><p>{{Proyecto.descripcionP}}</p></td>
-                    <td class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2" ><img src='{{"/../../assets/" + Proyecto.nombreP + ".png"}}' class="img-fluid img-project"></td>
+                    <td>
+                        <h2>{{Proyecto.nombreP}}</h2>
+                    </td>
+                    <td id="proyecto">
+                        <p>{{Proyecto.descripcionP}}</p>
+                    </td>
+                    <!-- El form arma el path de la imagen en base al nombre, por eso debe ir en minusculas, y luego lo busca en el repositorio de la app-->
+                    <td class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2"><img
+                            src='{{"/../../assets/" + Proyecto.nombreP + ".png"}}' class="img-fluid img-project"></td>
                     <td *ngIf="isLogged"><button class="btn btn-light" routerLink="/editproy/{{Proyecto.id}}"><i
                                 class="bi bi-pencil-fill"></i>Editar</button></td>
                     <td *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(Proyecto.id)"><i

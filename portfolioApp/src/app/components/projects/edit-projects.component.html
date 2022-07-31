@@ -5,6 +5,7 @@
             <div>
                 <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
                     <div class="form-group">
+                        <!-- El nombre del proyecto debe ir en minusculas-->
                         <label for="nombreP">Nombre del Proyecto</label>
                         <input type="text" class="form-control" id="nombreP" name="nombreP" [(ngModel)]="proy.nombreP"
                             required>

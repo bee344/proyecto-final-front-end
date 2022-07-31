@@ -1,13 +1,16 @@
 <div class="row">
     <div class="coll-xs-12 col-sm-2 col-md-2 col-lg-2 h-25 align-items-top">
+        <!-- El path de la imagen se conforma con el nombre y el apellido de la persona, luego se busca en el repositorio-->
+        <!-- Deberia agregar una opcion para cargar una imagen propia, pero me supera-->
         <img src='{{"../../../../../assets/" + persona.nombre + persona.apellido + ".jpg"}}'
             class="img-thumbnail float-left" alt="Responsive Image" id="profilepic">
     </div>
     <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 align-self-center">
         <p id="name">{{persona.nombre}} {{persona.apellido}}</p>
+        <!-- El form busca la primera y unica profesion que esta en la base de datos, debe haber otra forma mas practica pero tambien me supera-->
         <li *ngFor="let About of about">
             <p id="job">{{about[0].profesion}}</p>
-          </li>
+        </li>
 
     </div>
     <div class="col-xs-12 col-sm-8 col-md-8 col-8 align-self-center" id="description">
@@ -15,7 +18,8 @@
             <h1>Sobre mí</h1>
             <li *ngFor="let About of about">
                 <p>{{About.descripcion}}</p>
-              </li>
+            </li>
+            <!-- El sistema solo permite editar la descripcion, no eliminarla ni agregar nuevas, porque no tiene sentido tener multiples descripciones-->
             <p *ngIf="isLogged"><button class="btn btn-light" routerLink="/editabout/1"><i
                         class="bi bi-pencil-fill"></i>Editar</button></p>
         </span>
